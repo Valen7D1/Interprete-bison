@@ -1,0 +1,27 @@
+(setq b 0)
+(setq c 0)
+
+(defun suma(a b)
+(setq c 0)
+	(setq d 0)
+	(loop while ( <= a  b ) do (setq d ( + a  1 ))
+	(setq c ( + a  d ))
+	(setq a ( + a  1 ))
+	(print c)
+	)
+	(setq d 0)
+	(return-from suma c)
+	)
+ 
+
+(defun main() 
+	(setq a 3)
+	(setq b 10)
+	(setq c (suma a b ))
+	(print "La suma total de a a b es: ")
+	(print c)
+	(return-from main c)
+	(if ( < a  b ) (setq d ( + a  5 )) (setq d ( - b  a )))
+	(return-from main d)
+	
+) (main)

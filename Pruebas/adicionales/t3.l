@@ -1,0 +1,25 @@
+(setq b 0)
+
+(defun par(a)
+(if ( = (mod a  2 )  0 ) (progn (return-from par 1)
+	) (progn (return-from par 0)
+	))
+	)
+ 
+
+(defun main() 
+	(setq c 0)
+	(setq b 7)
+	(loop while ( < b  10 ) do (setq c (par b ))
+	(if ( = c  0 ) (progn (print "b es par")
+	) (progn (print "b es impar")
+	))
+	(setq b ( + b  1 ))
+	)
+	(setq c 0)
+(loop while ( + 5  7 ) do (print "Si no es par , es impar")
+	(setq a 0)
+	(return-from main a)
+	 (setq a 0))
+	
+) (main)

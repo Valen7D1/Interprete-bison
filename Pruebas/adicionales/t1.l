@@ -1,0 +1,35 @@
+
+(defun doble(a)
+(setq b 0)
+	(setq b ( * a  2 ))
+	(return-from doble b)
+	)
+(defun cuatriple(a)
+(setq b 0)
+	(setq b ( * a  4 ))
+	(return-from cuatriple b)
+	)
+(defun triple(a)
+(setq b 0)
+	(setq b ( * a  3 ))
+	(return-from triple b)
+	)
+ 
+ 
+ 
+
+(defun main() 
+	(setq a 0)
+	(setq a 3)
+	(print "El triple de ")
+	(print a)
+	(setq c (triple a ))
+	(print " es ")
+	(print c)
+	(setq a 12)
+	(print "El doble de ")
+	(print a)
+	(print " es ")
+	(print (doble a ))
+	
+) (main)

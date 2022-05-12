@@ -1,0 +1,23 @@
+Forma de compilar y hacer pruebas:
+primero instala en tu maquina lips --> sudo apt-get install lisp
+Hazte un archivo C con el mismo formato y estilo que los ejemplos en la carpeta "Pruebas profes"
+Una vez tengas ese archivo ejecuta este comando (deberás tener el archivo en la misma carpeta que el parte3)
+
+bison parte3.y
+gcc parte3.tab.c -o parte3
+
+(hasta aqui es normal)
+Ahora debes compilar y traducir a lisp el codigo:
+(pongamos como ejemplo el fibonacci1.c)
+./parte3 <fibonacci1.c> fibonacci1.l
+lisp fibonacci1.l
+
+(una vez ejecutes eso la terminal te dará la salida del programa, para comprobar que va bien simplemente compila el c original y 
+ejecutalo y si te da lo mismo es que va bien, ojo que el formato de salida en la terminal es distinto en C que en LISP, te tiene 
+que dar el mismo resultado numerico solo)
+
+*DISCLAIMER1* Te recomendaría que para probar el codigo de C uses la plataforma Replit que te permite compilar 
+programas de distintos lenguajes en un clik
+
+*DISCLAIMER2* La carpeta de pruebas profes ya tiene todas las pruebas pasadas, para comprobarlas si quieres 
+no tienes que hacer todo el proceso de arriba, con solo hacer la parte de lips nombre.l te valdría
